@@ -1,0 +1,33 @@
+python scrape_v3.py --start-url "https://500yenshop.com/en/yahoo-auctions/list?cid=All&search=334460&s=%E3%82%B5%E3%83%B3%E3%83%90%E3%83%BC+kv4+KV4&translate=0&page=1" --pages 500 --out all_listings.csv
+
+=NOT(
+   OR(
+      ISNUMBER(SEARCH("belt",I2)),
+      ISNUMBER(SEARCH("spark",I2)),
+      ISNUMBER(SEARCH("plug",I2)),
+      ISNUMBER(SEARCH("seat cover",I2)),
+      ISNUMBER(SEARCH("clutch",I2)),
+      ISNUMBER(SEARCH("ball joint",I2)),
+      ISNUMBER(SEARCH("brake pad",I2)),
+      ISNUMBER(SEARCH("radiator cap",I2)),
+      ISNUMBER(SEARCH("gasket",I2)),
+      ISNUMBER(SEARCH("valve cover",I2)),
+      ISNUMBER(SEARCH("boot",I2)),
+      ISNUMBER(SEARCH("spring",I2)),
+      ISNUMBER(SEARCH("fuel",I2)),
+      ISNUMBER(SEARCH("filter",I2)),
+      ISNUMBER(SEARCH("shock",I2)),
+      ISNUMBER(SEARCH("timing",I2)),
+      ISNUMBER(SEARCH("brake",I2)),
+      ISNUMBER(SEARCH("boss",I2)),
+      ISNUMBER(SEARCH("tie rod",I2)),
+      ISNUMBER(SEARCH("carb",I2)),
+      ISNUMBER(SEARCH("drive shaft",I2)),
+      ISNUMBER(SEARCH("caliper",I2))
+   )
+)
+
+
+catalog, domingo, steering wheel, dias, sunroof, trim
+
+Add this as its own column and put the words you want to filter out (Once everything has been translated)
